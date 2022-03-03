@@ -5,11 +5,12 @@
   margin: 0;
   padding: 0;
   color: #fff;
+  font-family: 'Open Sans', sans-serif;
 }
 
-html {
+body {
   background-color: hsl(257, 40%, 49%);
-  background-image: url(../public/images/bg-mobile.svg);
+  background-image: url(images/bg-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -18,9 +19,6 @@ html {
 
 .flexBoxContainer {
   display: block;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .leftFlexBox {
@@ -58,7 +56,6 @@ html {
 
 .rightFlexBox p {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   font-size: 0.9rem;
   letter-spacing: 1px;
   padding: 0px 2rem;
@@ -72,7 +69,6 @@ html {
   margin: 30px 0 0 0;
   color: hsl(257, 40%, 49%);
   box-shadow: 1px 1px 5px rgb(48, 48, 48);
-  font-family: 'Open Sans', sans-serif;
   cursor: pointer;
 }
 
@@ -91,28 +87,27 @@ html {
 }
 
 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor:pointer;
   width: 15px;
   height: 15px;
   border: 1px solid;
   border-color: #fff;
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
   margin: 0 4px 0 4px;
 }
 
 .icon:hover {
   border-color: hsl(300, 69%, 71%);
-  fill: hsl(300, 69%, 71%);
+  color: hsl(300, 69%, 71%);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1800px) {
-  html {
+  body {
     background-image: url(../public/images/bg-mobile.svg);
-  }
-
-  .flexBoxContainer {
-    display: block;
   }
 
   .logo {
@@ -155,25 +150,30 @@ html {
     height: 25px;
     padding: 10px;
     margin: 0 8px 0 8px;
+    font-size: 18px;
   }
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1800px) {
-  html {
-    background-image: url(../public/images/bg-desktop.svg);
+  body {
+    background-image: url(images/bg-desktop.svg);
+  }
+
+  .icon {
+    font-size: 22px;
   }
 }
 
 @media only screen and (min-width: 1801px) {
-  html {
-    background-image: url(../public/images/bg-desktop.svg);
-    background-size: fill;
-    width: 100%;
-    height: 100%;
+  body {
+    background-image: url(images/bg-desktop.svg);
   }
 
   .flexBoxContainer {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo {
@@ -222,22 +222,16 @@ html {
   }
 
   .icon {
-    cursor:pointer;
     width: 25px;
     height: 25px;
     padding: 18px;
     border: 3px solid;
     margin: 0 15px 40px 15px;
+    font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 2560px) {
-  html {
-    background-image: url(../public/images/bg-desktop.svg);
-    background-size:contain;
-    height: 100%;
-  }
-
   .logo {
     margin: 80px 800px 0 0;
     width: 25%;
@@ -247,7 +241,6 @@ html {
     margin: 120px 0 0 120px;
     width: 50vw;
   }
-
 
   .rightFlexBox h1 {
     margin: 0 0 0 60px;
@@ -276,11 +269,9 @@ html {
   }
 
   .icon {
-    cursor:pointer;
     width: 40px;
     height: 40px;
-    padding: 18px;
-    border: 3px solid;
     margin: 0 15px 0 15px;
+    font-size: 30px;
   }
 }
