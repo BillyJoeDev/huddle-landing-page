@@ -13,8 +13,6 @@ This is a solution to the [Huddle landing page with single introductory section 
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The Challenge
@@ -31,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Huddle Landing Page](https://www.frontendmentor.io/solutions/huddle-landing-page-using-flexbox-qV3ZeFQob)
-- Live Site URL: [Huddle Landing Page](https://huddlelp.herokuapp.com/)
+- Live Site URL (hosted on Heroku - may load slow): [Huddle Landing Page](https://huddlelp.herokuapp.com/)
 
 ## My process
 
